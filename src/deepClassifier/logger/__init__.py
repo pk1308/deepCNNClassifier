@@ -1,7 +1,8 @@
-from loguru import logger
-from datetime import datetime
 import os
+from datetime import datetime
+
 import pandas as pd
+from loguru import logger
 
 LOG_DIR = "logs"
 
@@ -14,6 +15,6 @@ LOG_FILE_NAME = get_log_file_name
 os.makedirs(LOG_DIR, exist_ok=True)
 
 LOG_FILE_PATH = os.path.join(LOG_DIR, LOG_FILE_NAME)
-log_format = "{time:YYYY-MM-DD at HH:mm:ss} | {level} |{function} | {message}"
+log_format = "{time:YYYY-MM-DD at HH:mm:ss}|{level}|{module}|{message}"
 logger.add(LOG_FILE_PATH, format=log_format, level="DEBUG")
 
