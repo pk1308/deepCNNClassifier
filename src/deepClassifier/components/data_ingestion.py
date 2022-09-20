@@ -5,8 +5,8 @@ from zipfile import ZipFile
 
 from tqdm import tqdm
 
-from deepClassifier import logger
 from deepClassifier.entity import DataIngestionConfig
+from deepClassifier.logger import logger
 from deepClassifier.utils import get_size
 
 
