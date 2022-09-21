@@ -13,6 +13,7 @@ joblib
 types-PyYAML
 scipy
 loguru 
+hydra-core
 -e .
 
 ## Dev requirements
