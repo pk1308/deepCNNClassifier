@@ -1,1 +1,4 @@
-from deepClassifier.entity.config_entity import *
+from deepClassifier.entity.config_entity import (DataIngestionConfig,
+                                                 PrepareBaseModelConfig,
+                                                 PrepareCallbacksConfig,
+                                                 TrainingConfig)
