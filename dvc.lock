@@ -57,14 +57,14 @@ stages:
       params.yaml:
         AUGMENTATION: true
         BATCH_SIZE: 16
-        EPOCHS: 5
+        EPOCHS: 50
         IMAGE_SIZE:
         - 224
         - 224
         - 3
     outs:
     - path: artifacts/training/model.h5
-      md5: f288111e7553adf016082d1a2d734268
+      md5: b12fbbef9aa18e6d0156e18a38d97bc7
       size: 59135136
   prepare_base_model:
     cmd: python src/deepClassifier/pipeline/stage_02_prepare_base_model.py
@@ -98,7 +98,7 @@ stages:
       size: 848866410
       nfiles: 24998
     - path: artifacts/training/model.h5
-      md5: f288111e7553adf016082d1a2d734268
+      md5: b12fbbef9aa18e6d0156e18a38d97bc7
       size: 59135136
     - path: configs/config.yaml
       md5: 1ec520a6d61da3ea35c23366a01cf083
@@ -115,5 +115,5 @@ stages:
         - 3
     outs:
     - path: scores.json
-      md5: c48fd8a471037fb6722bc6f7d2477a64
+      md5: a889c9bfb56862a063eb8e50b5467849
       size: 70
